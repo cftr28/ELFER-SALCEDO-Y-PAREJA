@@ -862,34 +862,23 @@
     margin: 0;
 }
 
-.foto-principal {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
 /* Efecto suave al hacer hover */
 .foto-principal:hover {
     transform: scale(1.02);
 }
 .seccion-foto-destacada {
-    /* Fuerza al contenedor a tener una altura visible */
-    min-height: 400px; 
-    
-    /* Configuración del fondo */
-    background-image: url('fondo3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* Centrado de la foto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* Espaciado */
-    padding: 40px 20px;
     width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
